@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PageController@home')->name('home');
 Route::get('/list', 'PageController@list')->name('list');
-Route::get('/read', 'PageController@read')->name('read');
+Route::get('/listadmin', 'PageController@listadmin')->name('listadmin');
+Route::get('/read', 'PageController@logadmin')->name('logadmin');
 
 
 // Route::get('/houses', 'HousesController@index')->name('houses.index');

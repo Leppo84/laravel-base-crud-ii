@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comic;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -11,10 +12,17 @@ class PageController extends Controller
     }
 
     public function list() {
-        return view('front.list');
+        $comics = Comic::all();
+        return view('front.list', compact('comics'));
     }
 
-    public function read() {
-        return view('front.read');
+    public function listadmin() {
+        $comics = Comic::all();
+        return view('front.listadmin', compact('comics'));
+    }
+
+
+    public function logadmin() {
+        return view('front.logadmin');
     }
 }

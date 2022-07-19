@@ -9,13 +9,13 @@
     <title>@yield('pageTitle')</title>
 </head>
 <body>
-    <header class="container">
+    <header>
         @include('front.partials.header')
     </header>
-    <main class="container">
+    <main>
         @yield('mainContent')
     </main>
-    <footer class="container">
+    <footer>
         @include('front.partials.footer')
     </footer>
 </body>

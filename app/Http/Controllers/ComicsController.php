@@ -2,10 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Comic;
+
 use Illuminate\Http\Request;
 
 class ComicsController extends Controller
 {
+    public function list() {
+        $comics = Comic::all();
+        return view('admin.comics.list', compact('comics'));
+    }
+
     /**
      * Display a listing of the resource.
      *
