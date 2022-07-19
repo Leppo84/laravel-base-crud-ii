@@ -16,12 +16,6 @@ class PageController extends Controller
         return view('front.list', compact('comics'));
     }
 
-    public function listadmin() {
-        $comics = Comic::all();
-        return view('front.listadmin', compact('comics'));
-    }
-
-
     public function logadmin() {
         return view('front.logadmin');
     }

@@ -1,7 +1,7 @@
 @extends('front.template.base')
 
 @section('mainContent')
-    <main>
+    <br>
         <h1>Home page</h1>
-    </main>
+    <br>
 @endsection
